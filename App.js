@@ -28,7 +28,7 @@ export default class App extends Component<Props> {
           Hello World!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          Need test
         </Text>
         <Text style={styles.instructions}>
           {instructions}
