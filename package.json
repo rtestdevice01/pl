@@ -13,10 +13,22 @@
   "devDependencies": {
     "babel-jest": "23.4.2",
     "babel-preset-react-native": "4.0.1",
+    "detox": "^9.0.1",
     "jest": "23.5.0",
     "react-test-renderer": "^16.3.0-alpha.0"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/reactnativepipeline55.app",
+        "build": "xcodebuild -project ios/reactnativepipeline55.xcodeproj -scheme reactnativepipeline55 -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 7"
+      }
+    }
   }
 }
