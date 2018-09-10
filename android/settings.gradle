@@ -1,0 +1,3 @@
+rootProject.name = 'reactnativepipeline55'
+
+include ':app'
