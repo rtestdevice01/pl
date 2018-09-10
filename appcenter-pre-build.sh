@@ -7,3 +7,5 @@ fi
 
 echo "Changing ios bundle identifier"
 plutil -replace CFBundleIdentifier -string "io.rangle.reactnativepipeline" $APPCENTER_SOURCE_DIRECTORY/ios/reactnativepipeline55/Info.plist
+
+sh rundetoxtest-ios.sh
